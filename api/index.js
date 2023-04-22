@@ -30,3 +30,16 @@ app.listen(PORT, () => console.log(`Server listen on PORT ${PORT}`));
 async function fetInfo (){
     return await needle(URL).then((res) => JSON.parse(res.body).data)
 }
+
+    // "builds": [
+    //     {
+    //         "src": "./api/index.js",
+    //         "use": "@vercel/node"
+    //     }
+    // ],
+    // "routes": [
+    //     {
+    //         "src": "/(.*)",
+    //         "dest": "/"
+    //     }
+    // ]
