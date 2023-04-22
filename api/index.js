@@ -6,7 +6,7 @@ const date = new Date()
 const nowDate = `${date.getFullYear()}-${("0" + (date.getMonth() + 1)).slice(-2)}-${("0" + date.getDate()).slice(-2)}`
 const URL = `https://www.avtovokzal.org/app_php/request_schedule.php?id=1346&date=%27${nowDate}%27&station=nt&platform=web`;
 
-const PORT = 5000
+const PORT = 5555
 
 const app = express();
 
